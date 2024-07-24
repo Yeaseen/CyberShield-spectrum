@@ -1,0 +1,60 @@
+All are loacal networks
+
+Router IP: 192.168.56.10
+username:root     password:ut@Hut@H
+
+WAN VM Router IP: 10.0.2.4
+
+Webgoat server IP⇒ 192.168.56.102
+username:webgoat   password:webgoat
+
+
+Kali IP: 10.0.2.5
+username:kali    password:kali
+
+
+Active machines so far: 192.168.56.1 		192.168.56.10                192.168.56.102   
+
+
+OpenVPN VM IP: 192.168.56.103
+username:root     password:openvpnas
+
+ssh webgoat@10.0.2.4 -p 2222 will work because of port forwarding
+
+iptables rule on kali
+ssh webgoat@192.168.56.101 -p 22 won’t work
+
+
+Jump server ip: 192.168.56.104
+username:jumper    password:jumper
+
+Backupserver ip: 192.168.56.105/24
+username:ubuntu     password:ubuntu
+
+W10_VM
+IPV4: 192.165.56.106
+Username: yeaseen  password: 18996
+
+
+
+
+java-1.17.0-openjdk-amd64 /usr/lib/jvm/java-1.17.0-openjdk-amd64
+https://www.blackhillsinfosec.com/a-sysmon-event-id-breakdown/
+
+
+
+Installing Autopsy on Linux: https://github.com/sleuthkit/autopsy/blob/develop/Running_Linux_OSX.md#installing-prerequisites
+
+Step1:
+ ./install_prereqs_ubuntu.sh 
+
+
+Step2:
+sudo apt-get remove libtsk13
+sudo apt update && sudo apt install ./sleuthkit-java_4.12.1-1_amd64.deb
+
+
+Step3: 
+./install_application.sh -z ~/Downloads/autopsy-4.21.0.zip -i ~/autopsy -j /usr/lib/jvm/java-1.17.0-openjdk-amd64
+
+
